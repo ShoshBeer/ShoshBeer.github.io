@@ -8,10 +8,7 @@ export default function() {
       <Head>
         <title>[project Project]</title>
       </Head>
-      <h1>Learn to do words with the mouth more good!</h1>
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
+      <h2>Learn to do words with the mouth more good!</h2>
     </Layout>
   );
 }

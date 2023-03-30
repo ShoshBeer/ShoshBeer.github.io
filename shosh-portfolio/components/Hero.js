@@ -10,7 +10,7 @@ export default function Hero() {
   const aboutText = ["Learning is my first passion.\nI love to work with something I don't yet understand.", 'Building websites is my newest passion.\nI want to create positive experiences for the betterment of the world.', 'Teaching lies at the intersection of thinking and communicating.\nMy teaching background allows me to effectively share ideas in any context.'];
 
   return (
-    <section id='#about'>
+    <section id='about'>
       <div className="max-w-6xl mx-auto h-44 bg-white dark:bg-gray-800 antialiased">
         <h2 className="text-5xl lg:text-6xl font-bold py-20 text-center md:text-left">
           Who I Am
@@ -21,21 +21,21 @@ export default function Hero() {
         <div>
           <button 
             value="0" 
-            className={`text-4xl text-gray-50 font-semibold block hover:border-2 ${about == 0 ? 'border-2' : 'border-0'}`}
+            className={`text-4xl text-gray-50 font-semibold block hover:border-current border-2 ${about == 0 ? 'border-current' : 'border-transparent'}`}
             onClick={(e) => handleAboutButton(e)}>
               Learner
           </button>
 
           <button 
             value="1"
-            className={`text-4xl text-gray-50 font-semibold my-4 block hover:border-2 ${about == 1 ? 'border-2' : 'border-0'}`}
+            className={`text-4xl text-gray-50 font-semibold my-4 block hover:border-current border-2 ${about == 1 ? 'border-current' : 'border-transparent'}`}
             onClick={(e) => handleAboutButton(e)}>
               Developer
           </button>
 
           <button 
             value="2" 
-            className={`text-4xl text-gray-50 font-semibold block hover:border-2 ${about == 2 ? 'border-2' : 'border-0'}`}
+            className={`text-4xl text-gray-50 font-semibold block hover:border-current border-2 ${about == 2 ? 'border-current' : 'border-transparent'}`}
             onClick={(e) => handleAboutButton(e)}
             >
               Teacher

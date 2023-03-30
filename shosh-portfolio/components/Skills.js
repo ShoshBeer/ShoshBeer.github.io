@@ -2,7 +2,7 @@ import react from "react";
 
 export default function Skills() {
   return (
-    <section id='#skills'>
+    <section id='skills'>
       <div className="max-w-6xl mx-auto h-44 bg-white dark:bg-gray-800 antialiased">
         <h2 className="text-5xl lg:text-6xl font-bold py-20 text-center md:text-left">
           Skills

@@ -1,7 +1,80 @@
-import react from "react";
+import { useTheme } from "next-themes";
+import react, { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function NavBar() {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const name = 'Shoshana Beer'
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
-    <div></div>
+    <div className={`max-w-6xl mx-auto px-4 py-3 ${theme === 'dark' ? 'bg-[#06194d]' : 'bg-[#d0dcf7]'}`}>
+      <div className="flex justify-between items-center flex-wrap">
+        {/* Logo / Home / Text */}
+        <div className=''>
+          {/* <Image
+            priority
+            src='/profile_1.jpg'
+            className='rounded-full inline'
+            height={108}
+            width={108}
+            alt='A photo of me!' 
+          /> */}
+          <h1 className='px-6 text-4xl lg:text-5xl font-extrabold tracking-tighter leading-tight inline float-right mt-2 whitespace-pre-line'>{name}</h1>
+        </div>
+        <div className="float-right w-full text-end order-3 pt-2 sm:inline-flex sm:order-2 sm:w-min">
+          <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#skills'>Skills</Link>
+          <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#projects'>Projects</Link>
+          <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#contact'>Contact</Link>
+        </div>
+        <button
+          aria-label="Toggle Dark Mode"
+          type="button"
+          className="w-10 p-3 rounded focus:outline-none"
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        >
+          {mounted && (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              stroke="currentColor"
+              className="w-4 h-4 text-yellow-500"
+            >
+              {theme === "dark" ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                />
+              )}
+            </svg>
+          )}
+          <div>
+            <p className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-700'} leading-[0.4rem]`}>
+              <span className="relative">.</span><br/>
+              <span className="relative animate-wiggle-less delay-100">.</span><br/>
+              <span className="relative animate-wiggle delay-100">.</span><br/>
+              <span className="relative animate-wiggle-less delay-100">.</span><br/>
+              <span className="relative animate-[wiggleHalf_linear_1s_reverse_infinite] delay-100">.</span><br/>
+              <span className="relative animate-wiggle delay-100">.</span><br/>
+            </p>
+          </div>
+        </button>
+      </div>
+    </div>
   );
 }

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import NavBar from './Navbar';
 import Footer from './Footer';
+import Image from 'next/image';
 
 export default function Layout({ children, home, ...customMeta }) {
   const meta = {
@@ -29,12 +30,23 @@ export default function Layout({ children, home, ...customMeta }) {
       </Head>
       <main>
         <NavBar />
+        {/* <header className='flex flex-col items-center'>
+          <Image
+            priority
+            src='/profile_1.jpg'
+            className='rounded-full'
+            height={144}
+            width={144}
+            alt='A photo of me!' 
+          />
+          <h1 className='text-5xl font-extrabold tracking-tighter my-4 leading-tight'>Shoshana Beer</h1>
+        </header> */}
         <div>{children}</div>
         <Footer />
       </main>
       {!home && (
-        <div className="">
-          <Link href="/">← Back to home</Link>
+        <div className="mt-12">
+          <Link className="text-blue-500 hover:underline" href="/">← Back to home</Link>
         </div>
       )}
     </div>
