@@ -21,10 +21,19 @@ module.exports = {
           '75%': { right: '-1px' },
           '100%': { right: '0'},
         },
+        stretch: {
+          '0%': { lineHeight: '0.4rem'},
+          '25%': { lineHeight: '0.6rem'},
+          '50%': { lineHeight: '0.8rem' },
+          '75%': { lineHeight: '1rem' },
+          '95%': { lineHeight: '0.3rem'},
+          '100%': { lineHeight: '0.4rem'},
+        }
       },
       animation: {
-        'wiggle': 'wiggle 1s linear infinite',
-        'wiggle-less': 'wiggleHalf 1s linear infinite'
+        'wiggle': 'wiggle 0.75s linear infinite',
+        'wiggle-less': 'wiggleHalf 0.75s linear infinite',
+        'pull-down': 'stretch 0.2s linear 1'
       }
     },
   },

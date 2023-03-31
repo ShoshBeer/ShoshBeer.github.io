@@ -5,12 +5,23 @@ import Link from "next/link";
 
 export default function NavBar() {
   const [mounted, setMounted] = useState(false);
+  const [pulling, setPulling] = useState('');
+  const [animation, setAnimation] = useState('');
   const { theme, setTheme } = useTheme();
-  const name = 'Shoshana Beer'
+  const name = 'Shoshana Beer';
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const handlePull = () => {
+    setAnimation('!animate-none');
+    setPulling('animate-pull-down');
+    setTimeout(() => {
+      setPulling('');
+      setAnimation('');
+    }, 200);
+  }
 
   return (
     <div className={`max-w-6xl mx-auto px-4 py-3 ${theme === 'dark' ? 'bg-[#06194d]' : 'bg-[#d0dcf7]'}`}>
@@ -36,7 +47,10 @@ export default function NavBar() {
           aria-label="Toggle Dark Mode"
           type="button"
           className="w-10 p-3 rounded focus:outline-none"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => {
+            setTheme(theme === "dark" ? "light" : "dark");
+            handlePull();
+          }}
         >
           {mounted && (
             <svg
@@ -64,13 +78,13 @@ export default function NavBar() {
             </svg>
           )}
           <div>
-            <p className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-700'} leading-[0.4rem]`}>
+            <p className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-700'} leading-[0.4rem] ${pulling}`}>
               <span className="relative">.</span><br/>
-              <span className="relative animate-wiggle-less delay-100">.</span><br/>
-              <span className="relative animate-wiggle delay-100">.</span><br/>
-              <span className="relative animate-wiggle-less delay-100">.</span><br/>
-              <span className="relative animate-[wiggleHalf_linear_1s_reverse_infinite] delay-100">.</span><br/>
-              <span className="relative animate-wiggle delay-100">.</span><br/>
+              <span className={`relative ${animation} animate-wiggle-less`}>.</span><br/>
+              <span className={`relative ${animation} animate-wiggle`}>.</span><br/>
+              <span className={`relative ${animation} animate-wiggle-less`}>.</span><br/>
+              <span className={`relative ${animation} animate-[wiggleHalf_linear_1s_reverse_infinite]`}>.</span><br/>
+              <span className={`relative ${animation} animate-wiggle`}>.</span><br/>
             </p>
           </div>
         </button>
