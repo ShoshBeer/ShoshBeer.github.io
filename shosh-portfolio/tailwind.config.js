@@ -23,9 +23,9 @@ module.exports = {
         },
         stretch: {
           '0%': { lineHeight: '0.4rem'},
-          '25%': { lineHeight: '0.6rem'},
-          '50%': { lineHeight: '0.8rem' },
-          '75%': { lineHeight: '1rem' },
+          '25%': { lineHeight: '0.5rem'},
+          '50%': { lineHeight: '0.6rem' },
+          '75%': { lineHeight: '0.7rem' },
           '95%': { lineHeight: '0.3rem'},
           '100%': { lineHeight: '0.4rem'},
         }
@@ -33,7 +33,7 @@ module.exports = {
       animation: {
         'wiggle': 'wiggle 0.75s linear infinite',
         'wiggle-less': 'wiggleHalf 0.75s linear infinite',
-        'pull-down': 'stretch 0.2s linear 1'
+        'pull-down': 'stretch 0.4s linear 1'
       }
     },
   },

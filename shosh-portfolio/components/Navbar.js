@@ -18,9 +18,12 @@ export default function NavBar() {
     setAnimation('!animate-none');
     setPulling('animate-pull-down');
     setTimeout(() => {
+      setTheme(theme === "dark" ? "light" : "dark");
+    }, 250);
+    setTimeout(() => {
       setPulling('');
       setAnimation('');
-    }, 200);
+    }, 400);
   }
 
   return (
@@ -38,7 +41,7 @@ export default function NavBar() {
           /> */}
           <h1 className='px-6 text-4xl lg:text-5xl font-extrabold tracking-tighter leading-tight inline float-right mt-2 whitespace-pre-line'>{name}</h1>
         </div>
-        <div className="float-right w-full text-end order-3 pt-2 sm:inline-flex sm:order-2 sm:w-min">
+        <div className="float-right w-full text-end order-3 pt-2 pr-5 sm:inline-flex sm:order-2 sm:w-min sm:pr-0">
           <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#skills'>Skills</Link>
           <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#projects'>Projects</Link>
           <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#contact'>Contact</Link>
@@ -46,9 +49,8 @@ export default function NavBar() {
         <button
           aria-label="Toggle Dark Mode"
           type="button"
-          className="w-10 p-3 rounded focus:outline-none"
+          className="w-10 p-3 rounded focus:outline-none h-20 overflow-visible"
           onClick={() => {
-            setTheme(theme === "dark" ? "light" : "dark");
             handlePull();
           }}
         >
