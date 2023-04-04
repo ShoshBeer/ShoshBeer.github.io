@@ -3,6 +3,7 @@ import Link from 'next/link';
 import NavBar from './Navbar';
 import Footer from './Footer';
 import Image from 'next/image';
+import { Providers } from './providers';
 
 export default function Layout({ children, home, ...customMeta }) {
   const meta = {
@@ -29,20 +30,22 @@ export default function Layout({ children, home, ...customMeta }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <main>
-        <NavBar />
-        {/* <header className='flex flex-col items-center'>
-          <Image
-            priority
-            src='/profile_1.jpg'
-            className='rounded-full'
-            height={144}
-            width={144}
-            alt='A photo of me!' 
-          />
-          <h1 className='text-5xl font-extrabold tracking-tighter my-4 leading-tight'>Shoshana Beer</h1>
-        </header> */}
-        <div>{children}</div>
-        <Footer />
+        <Providers>
+          <NavBar />
+          {/* <header className='flex flex-col items-center'>
+            <Image
+              priority
+              src='/profile_1.jpg'
+              className='rounded-full'
+              height={144}
+              width={144}
+              alt='A photo of me!' 
+            />
+            <h1 className='text-5xl font-extrabold tracking-tighter my-4 leading-tight'>Shoshana Beer</h1>
+          </header> */}
+          <div>{children}</div>
+          <Footer />
+        </Providers>
       </main>
       {!home && (
         <div className="mt-12">

@@ -27,7 +27,7 @@ export default function NavBar() {
   }
 
   return (
-    <div className={`max-w-6xl mx-auto px-4 py-3 ${theme === 'dark' ? 'bg-[#06194d]' : 'bg-[#d0dcf7]'}`}>
+    <div className={`max-w-6xl mx-auto px-4 py-3 ${theme === 'dark' ? 'bg-[#121212] border border-white' : 'bg-[#d0dcf7]'}`}>
       <div className="flex justify-between items-center flex-wrap">
         {/* Logo / Home / Text */}
         <div className=''>
@@ -42,8 +42,8 @@ export default function NavBar() {
           <h1 className='px-6 text-4xl lg:text-5xl font-extrabold tracking-tighter leading-tight inline float-right mt-2 whitespace-pre-line'>{name}</h1>
         </div>
         <div className="float-right w-full text-end order-3 pt-2 pr-5 sm:inline-flex sm:order-2 sm:w-min sm:pr-0">
-          <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#skills'>Skills</Link>
           <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#projects'>Projects</Link>
+          <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#skills'>Skills</Link>
           <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#contact'>Contact</Link>
         </div>
         <button
