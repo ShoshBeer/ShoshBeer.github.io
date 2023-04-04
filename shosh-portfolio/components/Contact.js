@@ -21,7 +21,7 @@ export default function Contact() {
               </p>
             </header>
             <div className="hidden md:block">
-              <Image className="mt-10 rounded-md" src="/talk-to-me-parks-and-rec.gif" alt="A clip from Parks and Recreation with Leslie Knope repeatedly saying 'talk to me' to Ron Swanson." width={498} height={280}/>
+              <Image className="mt-10 rounded-md" src="/talk-to-me-parks-and-rec.gif" alt="A clip from Parks and Recreation with Leslie Knope repeatedly tapping and saying 'talk to me' to Ron Swanson." width={498} height={280}/>
             </div>
           </div>
           <form className="form rounded-lg p-4 flex flex-col">

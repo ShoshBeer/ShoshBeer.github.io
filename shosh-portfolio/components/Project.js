@@ -6,7 +6,7 @@ export default function Project(props) {
   const { project } = props;
 
   return (
-    <div className="text-white py-4 grid grid-rows-auto text-center md:grid-cols-2">
+    <div className="dark:text-white py-4 grid grid-rows-auto text-center md:grid-cols-2">
       <h3 className="text-2xl md:col-span-2 mb-2">{project.title}</h3>
       <p >{project.description}</p>
       <a className="pt-4 order-3" target="_blank" href={project.repoLink}>View on GitHub</a>
