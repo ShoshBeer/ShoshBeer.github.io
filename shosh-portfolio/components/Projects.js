@@ -40,11 +40,11 @@ export default function Projects() {
   return (
     <section id='projects'>
       <div className="max-w-6xl mx-auto py-10 bg-white dark:bg-[#121212] antialiased">
-        <h2 className="text-4xl lg:text-5xl font-bold text-center md:text-left">
+        <h2 className="text-4xl lg:text-5xl font-bold text-center">
           Projects
         </h2>
       </div>
-      <div className="relative z-10 rounded-md shadow-md bg-[#1f4e22] p-4 md:p-10 lg:p-10 max-w-6xl mx-auto -mt-4">
+      <div className="relative rounded-md shadow-md p-4 md:p-10 lg:p-10 max-w-6xl mx-auto -mt-4">
         {projectInfo.map((project) => <Project key={project.title} project={project} />)}
       </div>
     </section>

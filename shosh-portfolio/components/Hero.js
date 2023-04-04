@@ -19,7 +19,7 @@ export default function Hero() {
           Who I Am
         </h2>
       </div>
-      <div className="relative z-10 rounded-md shadow-md bg-[#a01f6a] p-4 md:p-10 lg:p-16 max-w-6xl mx-auto mb-20 -mt-4 grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-1">
+      <div className="relative rounded-md shadow-md bg-[#a01f6a] p-4 md:p-10 lg:p-16 max-w-6xl mx-auto mb-20 -mt-4 grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-1">
 
         <div className="pt-4">
           <Image

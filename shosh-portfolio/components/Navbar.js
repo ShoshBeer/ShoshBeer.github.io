@@ -27,7 +27,7 @@ export default function NavBar() {
   }
 
   return (
-    <div className={`max-w-6xl mx-auto px-4 py-3 ${theme === 'dark' ? 'bg-[#121212] border border-white' : 'bg-[#d0dcf7]'}`}>
+    <div className="z-10 mx-auto px-4 fixed w-full py-3 dark:bg-[#121212] dark:border dark:border-white bg-[#d0dcf7]">
       <div className="flex justify-between items-center flex-wrap">
         {/* Logo / Home / Text */}
         <div className=''>

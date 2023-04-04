@@ -43,7 +43,7 @@ export default function Layout({ children, home, ...customMeta }) {
             />
             <h1 className='text-5xl font-extrabold tracking-tighter my-4 leading-tight'>Shoshana Beer</h1>
           </header> */}
-          <div>{children}</div>
+          <div className='pt-[142px] sm:pt-[106px]'>{children}</div>
           <Footer />
         </Providers>
       </main>
