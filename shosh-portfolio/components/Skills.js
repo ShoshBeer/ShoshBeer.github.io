@@ -41,7 +41,7 @@ export default function Skills() {
   }];
 
   return (
-    <section id='skills'>
+    <section id='skills' className="scroll-mt-[138px] sm:scroll-mt-[102px]">
       <div className="max-w-6xl mx-auto py-10 bg-white dark:bg-[#121212] antialiased">
         <h2 className="text-4xl lg:text-5xl font-bold text-center">
           Skills

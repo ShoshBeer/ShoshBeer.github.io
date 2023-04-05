@@ -27,24 +27,15 @@ export default function NavBar() {
   }
 
   return (
-    <div className="z-10 mx-auto px-4 fixed w-full py-3 dark:bg-[#121212] dark:border dark:border-white bg-[#d0dcf7]">
+    <div className="z-10 mx-auto px-4 fixed w-full py-3 dark:bg-[#121212] dark:border dark:border-white bg-[#d1e3f3]">
       <div className="flex justify-between items-center flex-wrap">
-        {/* Logo / Home / Text */}
-        <div className=''>
-          {/* <Image
-            priority
-            src='/profile_1.jpg'
-            className='rounded-full inline'
-            height={108}
-            width={108}
-            alt='A photo of me!' 
-          /> */}
-          <h1 className='px-6 text-4xl lg:text-5xl font-extrabold tracking-tighter leading-tight inline float-right mt-2 whitespace-pre-line'>{name}</h1>
+        <div>
+          <h1 className='px-6 text-4xl lg:text-5xl font-extrabold tracking-tighter leading-tight inline float-right mt-2 whitespace-pre-line'><Link href='/'>{name}</Link></h1>
         </div>
         <div className="float-right w-full text-end order-3 pt-2 pr-5 sm:inline-flex sm:order-2 sm:w-min sm:pr-0">
-          <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#projects'>Projects</Link>
-          <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#skills'>Skills</Link>
-          <Link className="px-2 text-xl font-medium hover:text-blue-600 hover:font-bold" href='#contact'>Contact</Link>
+          <Link className="px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='#projects'>Projects</Link>
+          <Link className="px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='#skills'>Skills</Link>
+          <Link className="px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='#contact'>Contact</Link>
         </div>
         <button
           aria-label="Toggle Dark Mode"

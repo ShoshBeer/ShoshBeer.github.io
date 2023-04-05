@@ -1,11 +1,20 @@
-import react from "react"
+import react from "react";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section id='about'>
-      <div className="max-w-6xl mx-auto pt-10 bg-white dark:bg-[#121212] antialiased">
+      <div className="max-w-6xl mx-auto pt-10 bg-white dark:bg-[#121212] antialiased text-center">
+        {/* <Image
+          priority
+          src='/profile_1.jpg'
+          className='rounded-full inline pb-3'
+          height={108}
+          width={108}
+          alt='A photo of me!' 
+        /> */}
         <h2 className="text-4xl lg:text-5xl font-bold text-center">
-          Hey there,
+          Hey there!
         </h2>
       </div>
       <div className="relative rounded-md shadow-md p-4 md:p-8 lg:p-8 max-w-6xl mx-auto -mt-4">

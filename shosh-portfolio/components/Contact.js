@@ -3,7 +3,7 @@ import react from "react";
 
 export default function Contact() {
   return (
-    <section id='contact'>
+    <section id='contact' className="scroll-mt-[138px] sm:scroll-mt-[102px]">
       <div className="max-w-6xl mx-auto py-10 bg-white dark:bg-[#121212] antialiased">
         <h2 className="text-4xl lg:text-5xl font-bold text-center">
           I'd love to hear from you!
@@ -13,9 +13,6 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
             <header className="text-center">
-              {/* <h3 className="dark:text-gray-50 font-semibold text-2xl">
-                I'd love to hear from you!
-              </h3> */}
               <p className="text-base dark:text-gray-200 mt-2">
                 Fill out your information to get in touch.
               </p>
