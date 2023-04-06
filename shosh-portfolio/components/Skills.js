@@ -51,8 +51,8 @@ export default function Skills() {
         {skillsList.map(skill => {
           return (
             <div className="border-2 text-center py-2">
-              <Image src={skill.icon} width={35} height={35} alt={`${skill.skill} icon`} className="inline pr-2 align-text-top" />
-              <p className="inline ml-2 font-semibold text-xl">{skill.skill}</p>
+              <Image src={skill.icon} width={35} height={35} alt={`${skill.skill} icon`} className="inline pr-2" />
+              <p className="inline ml-2 align-middle font-semibold text-xl">{skill.skill}</p>
             </div>
           );
         })}

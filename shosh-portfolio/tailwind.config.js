@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [    
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -37,6 +40,10 @@ module.exports = {
         'pull-down': 'stretch 0.4s linear 1'
       }
     },
+    screens: {
+      'xs': '356px',
+      ...defaultTheme.screens,
+    }
   },
   plugins: [],
 }

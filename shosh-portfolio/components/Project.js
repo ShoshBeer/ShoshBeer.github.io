@@ -6,9 +6,9 @@ export default function Project(props) {
   const { project } = props;
 
   return (
-    <div className="relative group">
-      <Image src={project.image} width={500} height={500} alt='A sneak peek at the project.' className="m-auto group-hover:opacity-20" />
-      <div className="mx-[47px] px-3 grid grid-cols-2 auto-rows-min text-center absolute inset-0 invisible opacity-0 group-hover:visible group-hover:opacity-100 h-min">
+    <div className="grid h-min relative group">
+      <Image src={project.image} width={500} height={500} alt='A sneak peek at the project.' className="col-span-full row-span-full m-auto group-hover:opacity-20" />
+      <div className="mx-[47px] col-span-full row-span-full self-center px-3 grid grid-cols-2 auto-rows-min text-center invisible opacity-0 group-hover:visible group-hover:opacity-100 h-min">
         <h3 className="col-span-2 py-3 text-2xl">{project.title}</h3>
         <p className="col-span-2 pb-4">{project.description}</p>
         <p><a href={project.siteLink} target="_blank">Go to project</a></p>

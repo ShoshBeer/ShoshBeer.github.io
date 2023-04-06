@@ -18,7 +18,7 @@ export default function About() {
         </h2>
       </div>
       <div className="relative rounded-md shadow-md p-4 md:p-8 lg:p-8 max-w-6xl mx-auto -mt-4">
-        <p className="text-xl dark:text-white">
+        <p className="text-xl text-center sm:text-left dark:text-white">
           I taught myself how to build websites! On this page you can see some things I've done. Take a look around and send me a message if you want to work together. Or climb. Or visit New Zealand.
         </p>
       </div>

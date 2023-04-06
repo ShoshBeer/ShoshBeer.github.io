@@ -24,7 +24,7 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/museum-of-reddit-natural-history',
     siteLink: null,
     skills: ['ReactJS', 'ReduxJS', 'Collaboration', 'Reddit API', 'React-Bootstrap', 'React Router', 'NodeJS', 'Git'],
-    description: 'A Chrome extension to improve the Reddit experience in a niche circumstance. No more navigating back and forth when the comments get really meta!',
+    description: 'A Chrome extension to improve the Reddit experience. No more navigating back and forth when the comments get really meta!',
     image: '/talking-in-circles-snap.png'
   },
   {
@@ -32,7 +32,7 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/Song-Snake',
     siteLink: 'https://song-snake.netlify.app/',
     skills: ['ReactJS', 'Spotify API', 'NodeJS', 'Git'],
-    description: "Create Spotify playlists related by single words. Start by searching for something in Spotify's library, and add a song from the results. Adding the song will trigger a new search for a single word from the title, artist, or album of the song you just added. Find music in different genres and make a game of guessing where a playlist's theme might end up!",
+    description: "Create Spotify playlists related by single words. Each song you add will trigger a new search for a single word from the title, artist, or album of the song you just added. Find music in different genres and make a game of guessing where a playlist's theme might end up!",
     image: '/talking-in-circles-snap.png'
   },
 ];
