@@ -7,7 +7,7 @@ export default function Project(props) {
 
   return (
     <div className="grid h-min relative group">
-      <Image src={project.image} width={500} height={500} alt='A sneak peek at the project.' className="col-span-full row-span-full m-auto group-hover:opacity-20" />
+      <Image src={project.image} width={500} height={500} alt='A sneak peek at the project.' className="col-span-full row-span-full m-auto group-hover:opacity-20 group-hover:pointer-events-none" />
       <div className="mx-[47px] col-span-full row-span-full self-center px-3 grid grid-cols-2 auto-rows-min text-center invisible opacity-0 group-hover:visible group-hover:opacity-100 h-min">
         <h3 className="col-span-2 py-3 text-2xl">{project.title}</h3>
         <p className="col-span-2 pb-4">{project.description}</p>
