@@ -7,8 +7,8 @@ import { Providers } from './providers';
 
 export default function Layout({ children, home, ...customMeta }) {
   const meta = {
-    title: "Shoshana - Learner, Developer, Teacher",
-    description: `I'm always learning and I want to build websites to help people and the planet.`,
+    title: "Shoshana Beer",
+    description: `I'm a developer. I will develop!`,
     image: "/profile_1.png",
     type: "website",
     url: "https://shoshbeer.github.io/",
