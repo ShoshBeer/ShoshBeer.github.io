@@ -50,7 +50,7 @@ export default function Skills() {
       <div className="relative rounded-md shadow-md p-4 md:p-10 lg:p-16 max-w-6xl mx-auto -mt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
         {skillsList.map(skill => {
           return (
-            <div className="border-2 text-center py-2">
+            <div key={skill.skill} className="border-2 text-center py-2">
               <Image src={skill.icon} width={35} height={35} alt={`${skill.skill} icon`} className="inline pr-2" />
               <p className="inline ml-2 align-middle font-semibold text-xl">{skill.skill}</p>
             </div>
