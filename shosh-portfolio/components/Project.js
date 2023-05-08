@@ -21,12 +21,12 @@ export default function Project(props) {
         <p className="col-span-2 pb-4 text-sm min-[410px]:text-base">{project.description}</p>
 
         <p><a 
-          className="rounded-md border border-blue-600 p-1 hover:bg-blue-200" href={project.siteLink} target="_blank">
+          className="rounded-md border border-blue-600 p-1 hover:bg-blue-200" href={project.siteLink} rel="noreferrer" target="_blank">
             Go to project
         </a></p>
 
         <p><a 
-          className="rounded-md border border-blue-600 p-1 hover:bg-blue-200" href={project.repoLink} target="_blank">
+          className="rounded-md border border-blue-600 p-1 hover:bg-blue-200" href={project.repoLink} rel="noreferrer" target="_blank">
             View on GitHub
         </a></p>
       </div>

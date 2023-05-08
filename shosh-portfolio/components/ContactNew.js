@@ -27,11 +27,11 @@ export default function Contact() {
             <Image src={theme==="dark" ? EmailDark : EmailLight} width={25} height={25} alt='Email icon' className="inline pr-1 align-middle" />
             <p className="inline  pl-3">Send me an email!</p>
           </a>
-          <a href="https://www.linkedin.com/in/shoshana-beer-493152264/" target="_blank" className="rounded-xl hover:bg-blue-200 dark:hover:bg-blue-900 border-2 py-2 font-medium text-center">
+          <a href="https://www.linkedin.com/in/shoshana-beer-493152264/" rel="noreferrer" target="_blank" className="rounded-xl hover:bg-blue-200 dark:hover:bg-blue-900 border-2 py-2 font-medium text-center">
             <Image src={theme==="dark" ? LinkDark : LinkLight} width={25} height={25} alt='LinkedIn icon' className="inline pr-1 align-middle fill-slate-400" />
             <p className="inline  pl-3">Add me on LinkedIn!</p>
           </a>
-          <a href="https://github.com/ShoshBeer" target="_blank" className="rounded-xl hover:bg-blue-200 dark:hover:bg-blue-900 border-2 py-2 font-medium text-center">
+          <a href="https://github.com/ShoshBeer" rel="noreferrer" target="_blank" className="rounded-xl hover:bg-blue-200 dark:hover:bg-blue-900 border-2 py-2 font-medium text-center">
             <Image src={theme==="dark" ? GitDark : GitLight} width={25} height={25} alt='GitHub icon' className="inline pr-1 align-middle" />
             <p className="inline  pl-3">Follow me on GitHub!</p>
           </a>
