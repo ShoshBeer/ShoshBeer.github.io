@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section id='about'>
-      <div className="max-w-6xl mx-auto pt-10 bg-white dark:bg-[#121212] antialiased text-center">
+      <div className="max-w-6xl mx-auto pt-10 pb-5 bg-white dark:bg-[#121212] antialiased text-center">
         {/* <Image
           priority
           src='/profile_1.jpg'
