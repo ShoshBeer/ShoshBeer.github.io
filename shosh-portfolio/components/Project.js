@@ -1,9 +1,11 @@
 import react from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 export default function Project(props) {
 
   const { project } = props;
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className="grid relative group">
@@ -18,7 +20,14 @@ export default function Project(props) {
       {/* <div className="min-[410px]:mx-[47px] min-[768px]:mx-0 col-span-full row-span-full self-center px-3 grid grid-cols-2 auto-rows-min text-center invisible opacity-0 group-hover:visible group-hover:opacity-100 h-min"> */}
       <div className="min-[410px]:mx-[47px] min-[768px]:mx-0 col-span-full row-span-full self-center px-3 grid grid-cols-2 text-center border border-black dark:border-white h-full">
 
-        <h3 className="col-span-2 py-3 text-2xl">{project.title}</h3>
+        <div className="col-span-2 py-3 text-2xl">
+          <Image
+            src={theme === 'dark' && project.iconDark ? project.iconDark : project.icon}
+            height={38}
+            className="inline mr-3"
+            alt="Project icon" />
+          <h3 className="inline">{project.title}</h3>
+        </div>
         <p className="col-span-2 pb-4 text-sm min-[410px]:text-base">{project.description}</p>
 
         {project.siteLink && <a 
