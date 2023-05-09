@@ -20,7 +20,7 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/LearningDictionaries',
     siteLink: null,
     skills: ['Python', 'JSON', 'Various APIs', 'Git'],
-    description: 'Create dictionaries of words by frequency in different languages. Includes definitions, frequencies, and related words. Dictionaries already created for English, German, French, Spanish, Portugese, and Italian.',
+    description: 'Create dictionaries of common words with definitions, frequencies, and related words. Dictionaries already created for English, German, French, Spanish, Portugese, and Italian.',
     image: LearningDictionaries
   },
   {
@@ -28,7 +28,7 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/museum-of-reddit-natural-history',
     siteLink: null,
     skills: ['ReactJS', 'ReduxJS', 'Collaboration', 'Reddit API', 'React-Bootstrap', 'React Router', 'NodeJS', 'Git'],
-    description: 'A Chrome extension to improve the Reddit experience. No more navigating back and forth when the comments get really meta!',
+    description: 'A Chrome extension to improve the Reddit experience. No more navigating back and forth when the comments are full of links to other Reddit posts!',
     image: Reddit
   },
   {
