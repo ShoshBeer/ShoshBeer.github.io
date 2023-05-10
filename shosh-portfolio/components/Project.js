@@ -12,15 +12,16 @@ export default function Project(props) {
           <Image
             src={project.icon}
             height={38}
-            className="mr-3 inline dark:hidden"
+            className={`mr-3 inline ${project.iconDark && 'dark:hidden'}`}
             alt="Project icon"
           />          
-          <Image
-          src={project.iconDark}
-          height={38}
-          className="mr-3 hidden dark:inline"
-          alt="Project icon"
-          />
+          {project.iconDark && <Image
+            src={project.iconDark}
+            height={38}
+            className="mr-3 hidden dark:inline"
+            alt="Project icon"
+            />
+          }
           <h3 className="inline align-middle">{project.title}</h3>
         </div>
         <p className="col-span-2 pb-4 text-sm min-[410px]:text-lg">{project.description}</p>
