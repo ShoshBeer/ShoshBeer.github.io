@@ -28,7 +28,7 @@ export default function Layout({ children, home, ...customMeta }) {
         <meta property="og:url" content={meta.url} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main>
+      <main className='bg-white dark:bg-[#121212]'>
         <Providers>
           <NavBar />
           <div className='pt-[149px] xs:pt-[142px] sm:pt-[106px]'>{children}</div>
