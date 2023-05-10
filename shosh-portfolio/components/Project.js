@@ -1,4 +1,3 @@
-import react from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
@@ -13,7 +12,7 @@ export default function Project(props) {
 
         <div className="col-span-2 py-3 text-2xl">
           <Image
-            src={theme === 'dark' && project.iconDark ? project.iconDark : project.icon}
+            src={theme === 'dark' ? project.iconDark : project.icon}
             height={38}
             className="inline mr-3"
             alt="Project icon"

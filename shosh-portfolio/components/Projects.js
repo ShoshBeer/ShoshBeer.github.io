@@ -1,4 +1,3 @@
-import react from "react";
 import Project from "./Project";
 import TalkingCircles from '../public/images/talking-icon.svg';
 import TalkingDark from '../public/images/talking-icon-dark.svg';
@@ -22,6 +21,7 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/LearningDictionaries',
     siteLink: null,
     icon: LearningDictionaries,
+    iconDark: LearningDictionaries,
     skills: ['Python', 'JSON', 'Various APIs', 'Git'],
     description: 'Create dictionaries of common words with definitions, frequencies, and related words. Dictionaries already created for English, German, French, Spanish, Portugese, and Italian.'
   },
@@ -30,6 +30,7 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/museum-of-reddit-natural-history',
     siteLink: null,
     icon: Reddit,
+    iconDark: Reddit,
     skills: ['ReactJS', 'ReduxJS', 'Collaboration', 'Reddit API', 'React-Bootstrap', 'React Router', 'NodeJS', 'Git'],
     description: 'A Chrome extension to improve the Reddit experience. No more navigating back and forth when the comments are full of links to other Reddit posts!'
   },
@@ -38,6 +39,7 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/Song-Snake',
     siteLink: 'https://song-snake.netlify.app/',
     icon: SongSnake,
+    iconDark: SongSnake,
     skills: ['ReactJS', 'Spotify API', 'NodeJS', 'Git'],
     description: "Create unique Spotify playlists! Each song added triggers a new search for a single word from the title, artist, or album. Make a game of guessing where a playlist's theme will go!"
   },

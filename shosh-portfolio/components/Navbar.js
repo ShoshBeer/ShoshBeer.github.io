@@ -1,6 +1,5 @@
 import { useTheme } from "next-themes";
-import react, { useEffect, useState } from "react";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function NavBar() {

@@ -1,4 +1,3 @@
-import react from "react";
 import Image from "next/image";
 
 export default function About() {
@@ -8,7 +7,7 @@ export default function About() {
         <Image
           priority
           src='/profile_1.jpg'
-          className='rounded-full inline relative right-4 sm:right-10'
+          className='rotate-180 rounded-full inline relative right-4 sm:right-10'
           height={80}
           width={80}
           alt='A photo of me!' 
