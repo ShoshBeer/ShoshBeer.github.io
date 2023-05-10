@@ -27,7 +27,7 @@ export default function NavBar() {
   }
 
   return (
-    <div className="z-10 mx-auto px-4 fixed w-full py-3 dark:bg-[#121212] dark:border dark:border-white bg-[#d1e3f3]">
+    <div className="z-10 mx-auto px-4 fixed w-full py-3 dark:bg-[#121212] dark:border-b dark:border-white bg-[#d1e3f3]">
       <div className="flex justify-between items-center flex-wrap">
         <div>
           <h1 className='px-3 xs:px-6 text-4xl lg:text-5xl font-extrabold tracking-tighter leading-tight inline float-right mt-2 whitespace-pre-line'><Link href='/'>{name}</Link></h1>
