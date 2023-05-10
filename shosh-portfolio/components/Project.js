@@ -1,10 +1,8 @@
 import Image from "next/image";
-import { useTheme } from "next-themes";
 
 export default function Project(props) {
 
   const { project } = props;
-  const { theme, setTheme } = useTheme();
 
   return (
     <div className="grid relative group">
@@ -12,10 +10,16 @@ export default function Project(props) {
 
         <div className="col-span-2 py-3 text-2xl">
           <Image
-            src={theme === 'dark' ? project.iconDark : project.icon}
+            src={project.icon}
             height={38}
-            className="inline mr-3"
+            className="mr-3 inline dark:hidden"
             alt="Project icon"
+          />          
+          <Image
+          src={project.iconDark}
+          height={38}
+          className="mr-3 hidden dark:inline"
+          alt="Project icon"
           />
           <h3 className="inline align-middle">{project.title}</h3>
         </div>
