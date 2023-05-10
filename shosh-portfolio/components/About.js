@@ -19,7 +19,7 @@ export default function About() {
       </div>
       <div className="relative rounded-sm border border-black dark:border-white p-4 md:p-6 max-w-5xl md:mx-4 lg:mx-auto">
         <p className="text-xl text-center sm:text-left dark:text-white">
-          I taught myself how to build websites! On this page you can see some things I've done. Take a look around and send me a message if you want to work together. Or climb. Or visit New Zealand.
+          I taught myself how to build websites! On this page, you can see some things I've done. Take a look around and send me a message if you want to work together. Or climb. Or visit New Zealand.
         </p>
       </div>
     </section>
