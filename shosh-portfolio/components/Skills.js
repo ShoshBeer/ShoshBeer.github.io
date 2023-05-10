@@ -41,16 +41,16 @@ export default function Skills() {
   }];
 
   return (
-    <section id='skills' className="scroll-mt-[138px] sm:scroll-mt-[102px]">
-      <div className="max-w-6xl mx-auto py-10 bg-white dark:bg-[#121212] antialiased">
+    <section id='skills' className="scroll-mt-[138px] sm:scroll-mt-[102px] mb-6">
+      <div className="max-w-6xl mx-auto py-14 bg-white dark:bg-[#121212] antialiased">
         <h2 className="text-4xl lg:text-5xl font-bold text-center">
           Skills
         </h2>
       </div>
-      <div className="relative rounded-md shadow-md p-4 md:p-10 lg:p-16 max-w-6xl mx-auto -mt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+      <div className="relative max-w-5xl md:mx-4 lg:mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
         {skillsList.map(skill => {
           return (
-            <div key={skill.skill} className="border-2 text-center py-2">
+            <div key={skill.skill} className="border-2 rounded-sm text-center py-2">
               <Image src={skill.icon} width={35} height={35} alt={`${skill.skill} icon`} className="inline pr-2" />
               <p className="inline ml-2 align-middle font-semibold text-xl">{skill.skill}</p>
             </div>
