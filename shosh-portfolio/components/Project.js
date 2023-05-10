@@ -25,7 +25,8 @@ export default function Project(props) {
             src={theme === 'dark' && project.iconDark ? project.iconDark : project.icon}
             height={38}
             className="inline mr-3"
-            alt="Project icon" />
+            alt="Project icon"
+          />
           <h3 className="inline align-middle">{project.title}</h3>
         </div>
         <p className="col-span-2 pb-4 text-sm min-[410px]:text-base">{project.description}</p>
