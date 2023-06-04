@@ -28,10 +28,10 @@ export default function NavBar() {
   return (
     <div className="z-10 mx-auto px-4 fixed w-full py-3 dark:bg-[#121212] dark:border-b dark:border-white bg-[#d1e3f3]">
       <div className="flex justify-between items-center flex-wrap">
-        <div>
-          <h1 className='px-3 xs:px-6 text-4xl lg:text-5xl font-extrabold tracking-tighter leading-tight inline float-right mt-2 whitespace-pre-line'><Link href='/'>{name}</Link></h1>
+        <div className="lg:absolute">
+          <h1 className='px-3 xs:px-6 text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight inline float-right mt-2 whitespace-pre-line'><Link href='/'>{name}</Link></h1>
         </div>
-        <div className="float-right w-full text-end order-3 pt-2 pr-5 contents xs:inline-flex xs:justify-end sm:order-2 sm:w-min sm:pr-0">
+        <div className="float-right w-full text-end order-3 pt-2 pr-5 contents xs:inline-flex xs:justify-end sm:order-2 sm:w-min sm:pr-0 lg:absolute lg:right-6">
           <Link className="xs:px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='#projects'>Projects</Link>
           <Link className="px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='#skills'>Skills</Link>
           <Link className="px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='#contact'>Contact</Link>
@@ -39,7 +39,7 @@ export default function NavBar() {
         <button
           aria-label="Toggle Dark Mode"
           type="button"
-          className="w-10 p-3 rounded focus:outline-none h-20 overflow-visible"
+          className="w-10 p-3 rounded focus:outline-none h-20 overflow-visible lg:m-auto"
           onClick={() => {
             handlePull();
           }}
