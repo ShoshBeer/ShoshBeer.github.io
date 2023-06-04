@@ -2,7 +2,7 @@ import Project from "./Project";
 import TalkingCircles from '../public/images/talking-icon.svg';
 import TalkingDark from '../public/images/talking-icon-dark.svg';
 import LearningDictionaries from '../public/images/book-atlas-solid.svg';
-import Reddit from '../public/images/reddit-alien.svg';
+import Reddit from '../public/images/Snoo_dark.svg';
 import SongSnake from '../public/images/snake-flip.svg';
 
 export default function Projects() {
@@ -25,8 +25,8 @@ export default function Projects() {
     description: 'Create dictionaries of common words with definitions, frequencies, and related words. Dictionaries already created for English, German, French, Spanish, Portugese, and Italian.'
   },
   {
-    title: 'Museum of Reddit Natural History',
-    repoLink: 'https://github.com/ShoshBeer/museum-of-reddit-natural-history',
+    title: 'Reddit Purple',
+    repoLink: 'https://github.com/ShoshBeer/reddit-purple',
     siteLink: null,
     icon: Reddit,
     skills: ['ReactJS', 'ReduxJS', 'Collaboration', 'Reddit API', 'React-Bootstrap', 'React Router', 'NodeJS', 'Git'],
