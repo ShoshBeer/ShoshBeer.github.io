@@ -31,10 +31,11 @@ export default function NavBar() {
         <div className="lg:absolute">
           <h1 className='px-3 xs:px-6 text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight inline float-right mt-2 whitespace-pre-line'><Link href='/'>{name}</Link></h1>
         </div>
-        <div className="float-right w-full text-end order-3 pt-2 pr-5 contents xs:inline-flex xs:justify-end sm:order-2 sm:w-min sm:pr-0 lg:absolute lg:right-6">
+        <div className="float-right w-full text-end order-3 pt-2 pr-5 contents xs:inline-flex xs:justify-end sm:order-2 md:w-min sm:pr-0 lg:absolute lg:right-6">
           <Link className="xs:px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='#projects'>Projects</Link>
           <Link className="px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='#skills'>Skills</Link>
           <Link className="px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='#contact'>Contact</Link>
+          <a className="px-2 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:font-bold" href='/resume.pdf' target="_blank" >Resume</a>
         </div>
         <button
           aria-label="Toggle Dark Mode"
