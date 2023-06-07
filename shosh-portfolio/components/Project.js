@@ -32,7 +32,7 @@ export default function Project(props) {
         </a> }
 
         <a 
-          className={`rounded-md border border-black dark:border-white p-1 hover:bg-blue-200 dark:hover:bg-blue-900 mb-2 mx-1 md:mx-3 ${!project.siteLink && 'col-span-2'}`} href={project.repoLink} rel="noreferrer" target="_blank">
+          className={`rounded-md border border-black dark:border-white p-1 hover:bg-blue-200 dark:hover:bg-blue-900 mb-2 mx-1 md:mx-3 flex h-fit self-end justify-center ${!project.siteLink && 'col-span-2'}`} href={project.repoLink} rel="noreferrer" target="_blank">
             View on GitHub
         </a>
       </div>
