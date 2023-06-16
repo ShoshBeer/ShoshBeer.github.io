@@ -13,7 +13,22 @@ export default function Projects() {
     siteLink: 'https://shoshbeer.github.io/talking-circles/',
     icon: TalkingCircles,
     iconDark: TalkingDark,
-    skills: ['React', 'Redux', 'React-Bootstrap', 'React Router', 'Git'],
+    tools: [
+      {
+        skill: 'React',
+        icon: '/images/React-icon.svg.png'
+      }, {
+        skill: 'Redux',
+        icon: '/images/redux_logo.png'
+      }, {
+        skill: 'React-Bootstrap',
+        icon: '/images/react_bootstrap.png'
+      }, {
+        skill: 'Git',
+        icon: '/images/Git-Icon-1788C.png'
+      }
+    ],
+    skills: ['React Router'],
     description: 'Practise speaking to improve your language fluency with this 2+ player game! Set the difficulty according to your proficiency and give clues until your partner figures out the secret word.'
   },
   {
@@ -21,7 +36,16 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/LearningDictionaries',
     siteLink: null,
     icon: LearningDictionaries,
-    skills: ['Python', 'JSON', 'Data Processing', 'Python Libraries', 'Git'],
+    tools: [
+      {
+        skill: 'Python',
+        icon: '/images/Python-logo-notext.svg.png'
+      }, {
+        skill: 'Git',
+        icon: '/images/Git-Icon-1788C.png'
+      }
+    ],
+    skills: ['JSON', 'Data Processing', 'Python Libraries'],
     description: 'Create dictionaries of common words with definitions, frequencies, and related words. Dictionaries already created for English, German, French, Spanish, Portugese, and Italian.'
   },
   {
@@ -29,7 +53,22 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/reddit-purple',
     siteLink: null,
     icon: Reddit,
-    skills: ['React', 'Redux', 'Chrome API', 'Browser Environment', 'Collaboration', 'Reddit API', 'React-Bootstrap', 'React Router', 'Git'],
+    tools: [
+      {
+        skill: 'React',
+        icon: '/images/React-icon.svg.png'
+      }, {
+        skill: 'Redux',
+        icon: '/images/redux_logo.png'
+      }, {
+        skill: 'React-Bootstrap',
+        icon: '/images/react_bootstrap.png'
+      }, {
+        skill: 'Git',
+        icon: '/images/Git-Icon-1788C.png'
+      }
+    ],
+    skills: ['Chrome Extension', 'Collaboration', 'Reddit API', 'React Router'],
     description: 'A Chrome extension to improve the Reddit experience. No more navigating back and forth when the comments are full of links to other Reddit posts!'
   },
   {
@@ -37,7 +76,16 @@ export default function Projects() {
     repoLink: 'https://github.com/ShoshBeer/Song-Snake',
     siteLink: 'https://song-snake.netlify.app/',
     icon: SongSnake,
-    skills: ['React', 'Spotify API', 'Git'],
+    tools: [
+      {
+        skill: 'React',
+        icon: '/images/React-icon.svg.png'
+      }, {
+        skill: 'Git',
+        icon: '/images/Git-Icon-1788C.png'
+      }
+    ],
+    skills: ['Spotify API'],
     description: "Create unique Spotify playlists! Each song added triggers a new search for a single word from the title, artist, or album. Make a game of guessing where a playlist's theme will go!"
   },
 ];

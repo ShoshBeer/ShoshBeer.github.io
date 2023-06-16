@@ -27,7 +27,20 @@ export default function Project(props) {
         <p className="col-span-2 pb-4 text-sm min-[410px]:text-lg">{project.description}</p>
 
         <div className="col-span-2">
-          {project.skills.map((skill) => <p className="inline px-2">{skill}</p>)}
+          {project.tools.map((tool, index) => {
+            return (
+              <div className="inline">
+                <Image className="inline mr-1" src={tool.icon} width={25} height={25} alt={`${tool.skill} icon`} />
+                <p className="inline font-medium">{tool.skill}{index !== project.tools.length - 1 && <span className="px-3">|</span>}</p>
+              </div>
+            )
+          })}
+        </div>
+
+        <div className="col-span-2 pb-5">
+          {project.skills.map((skill, index) => {
+            return (<p className="inline font-medium">{skill}{index !== project.skills.length - 1 && <span className="px-2">|</span>}</p>)
+          })}
         </div>
 
         {project.siteLink && <a 
