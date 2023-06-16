@@ -21,8 +21,8 @@ export default function Projects() {
         skill: 'Redux',
         icon: '/images/redux_logo.png'
       }, {
-        skill: 'React-Bootstrap',
-        icon: '/images/react_bootstrap.png'
+        skill: 'Bootstrap',
+        icon: '/images/Bootstrap_logo.png'
       }, {
         skill: 'Git',
         icon: '/images/Git-Icon-1788C.png'
@@ -61,8 +61,8 @@ export default function Projects() {
         skill: 'Redux',
         icon: '/images/redux_logo.png'
       }, {
-        skill: 'React-Bootstrap',
-        icon: '/images/react_bootstrap.png'
+        skill: 'Bootstrap',
+        icon: '/images/Bootstrap_logo.png'
       }, {
         skill: 'Git',
         icon: '/images/Git-Icon-1788C.png'
