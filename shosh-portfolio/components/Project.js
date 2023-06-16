@@ -31,7 +31,7 @@ export default function Project(props) {
             return (
               <div className="inline">
                 <Image className="inline mr-1" src={tool.icon} width={25} height={25} alt={`${tool.skill} icon`} />
-                <p className="inline font-medium">{tool.skill}{index !== project.tools.length - 1 && <span className="px-3">|</span>}</p>
+                <p className="inline font-medium align-middle">{tool.skill}{index !== project.tools.length - 1 && <span className="px-3">|</span>}</p>
               </div>
             )
           })}
