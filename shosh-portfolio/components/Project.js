@@ -26,8 +26,12 @@ export default function Project(props) {
         </div>
         <p className="col-span-2 pb-4 text-sm min-[410px]:text-lg">{project.description}</p>
 
+        <div className="col-span-2">
+          {project.skills.map((skill) => <p className="inline px-2">{skill}</p>)}
+        </div>
+
         {project.siteLink && <a 
-          className="rounded-md border border-black dark:border-white p-1 hover:bg-blue-200 dark:hover:bg-blue-900 mb-2 mx-1 md:mx-3" href={project.siteLink} rel="noreferrer" target="_blank">
+          className="rounded-md border border-black dark:border-white p-1 hover:bg-blue-200 dark:hover:bg-blue-900 mb-2 mx-1 md:mx-3 flex h-fit self-end justify-center" href={project.siteLink} rel="noreferrer" target="_blank">
             Go to project
         </a> }
 
