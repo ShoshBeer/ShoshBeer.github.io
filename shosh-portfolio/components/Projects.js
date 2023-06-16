@@ -68,7 +68,7 @@ export default function Projects() {
         icon: '/images/Git-Icon-1788C.png'
       }
     ],
-    skills: ['Chrome Extension', 'Collaboration', 'Reddit API', 'React Router'],
+    skills: ['Chrome Extension', 'Regex', 'Collaboration', 'Reddit API', 'Webpack'],
     description: 'A Chrome extension to improve the Reddit experience. No more navigating back and forth when the comments are full of links to other Reddit posts!'
   },
   {

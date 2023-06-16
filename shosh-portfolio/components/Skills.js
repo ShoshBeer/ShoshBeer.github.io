@@ -20,7 +20,7 @@ export default function Skills() {
     skill: 'Python',
     icon: '/images/Python-logo-notext.svg.png'
   }, {
-    skill: 'Numpy',
+    skill: 'NumPy',
     icon: '/images/numpy-logo.png'
   }, {
     skill: 'Enzyme',
