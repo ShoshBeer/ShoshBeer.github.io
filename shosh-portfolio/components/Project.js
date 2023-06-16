@@ -26,8 +26,25 @@ export default function Project(props) {
         </div>
         <p className="col-span-2 pb-4 text-sm min-[410px]:text-lg">{project.description}</p>
 
+        <div className="col-span-2">
+          {project.tools.map((tool, index) => {
+            return (
+              <div className="inline">
+                <Image className="inline mr-1" src={tool.icon} width={25} height={25} alt={`${tool.skill} icon`} />
+                <p className="inline font-medium">{tool.skill}{index !== project.tools.length - 1 && <span className="px-3">|</span>}</p>
+              </div>
+            )
+          })}
+        </div>
+
+        <div className="col-span-2 pb-5">
+          {project.skills.map((skill, index) => {
+            return (<p className="inline font-medium">{skill}{index !== project.skills.length - 1 && <span className="px-2">|</span>}</p>)
+          })}
+        </div>
+
         {project.siteLink && <a 
-          className="rounded-md border border-black dark:border-white p-1 hover:bg-blue-200 dark:hover:bg-blue-900 mb-2 mx-1 md:mx-3" href={project.siteLink} rel="noreferrer" target="_blank">
+          className="rounded-md border border-black dark:border-white p-1 hover:bg-blue-200 dark:hover:bg-blue-900 mb-2 mx-1 md:mx-3 flex h-fit self-end justify-center" href={project.siteLink} rel="noreferrer" target="_blank">
             Go to project
         </a> }
 

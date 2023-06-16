@@ -17,11 +17,11 @@ export default function Skills() {
     skill: 'Git',
     icon: '/images/Git-Icon-1788C.png'
   }, {
-    skill: 'Node JS',
-    icon: '/images/node_js_logo.png'
-  }, {
     skill: 'Python',
     icon: '/images/Python-logo-notext.svg.png'
+  }, {
+    skill: 'Numpy',
+    icon: '/images/numpy-logo.png'
   }, {
     skill: 'Enzyme',
     icon: '/images/enzyme.png'
