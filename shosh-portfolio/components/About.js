@@ -7,7 +7,7 @@ export default function About() {
         <Image
           priority
           src='/profile_1.jpg'
-          className='rotate-180 rounded-full inline relative right-4 sm:right-10'
+          className='rounded-full inline relative right-4 sm:right-10'
           height={80}
           width={80}
           alt='A photo of me!' 

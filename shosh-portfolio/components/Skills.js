@@ -5,7 +5,7 @@ export default function Skills() {
     skill: 'HTML',
     icon: '/images/html-1.svg'
   }, {
-    skill: 'Vanilla JS',
+    skill: 'JavaScript',
     icon: '/images/Javascript-logo.png'
   }, {
     skill: 'React',
@@ -20,7 +20,7 @@ export default function Skills() {
     skill: 'Python',
     icon: '/images/Python-logo-notext.svg.png'
   }, {
-    skill: 'Numpy',
+    skill: 'NumPy',
     icon: '/images/numpy-logo.png'
   }, {
     skill: 'Enzyme',
@@ -32,8 +32,9 @@ export default function Skills() {
     skill: 'Bootstrap',
     icon: '/images/Bootstrap_logo.png'
   }, {
-    skill: 'React-Bootstrap',
-    icon: '/images/react_bootstrap.png'
+    skill: 'Next.js',
+    icon: '/images/nextjs-icon.png',
+    dark: '/images/nextjs-dark.png'
   }, {
     skill: 'Tailwind',
     icon: '/images/Tailwind_CSS_Logo.svg.png'
@@ -50,7 +51,21 @@ export default function Skills() {
         {skillsList.map(skill => {
           return (
             <div key={skill.skill} className="border-2 rounded-sm text-center py-2">
-              <Image src={skill.icon} width={35} height={35} alt={`${skill.skill} icon`} className="inline pr-2" />
+              <Image 
+                src={skill.icon} 
+                width={35} 
+                height={35} 
+                alt={`${skill.skill} icon`} 
+                className={`inline pr-2 ${skill.dark && 'dark:hidden'}`} 
+              />
+
+              {skill.dark && <Image 
+                src={skill.dark} 
+                width={35} 
+                height={35} 
+                alt={`${skill.skill} icon`} 
+                className="pr-2 hidden dark:inline" />
+              }
               <p className="inline ml-2 align-middle font-semibold text-xl">{skill.skill}</p>
             </div>
           );

@@ -29,9 +29,9 @@ export default function Project(props) {
         <div className="col-span-2">
           {project.tools.map((tool, index) => {
             return (
-              <div className="inline">
+              <div className="inline" key={`${project.title}-${tool.skill}`}>
                 <Image className="inline mr-1" src={tool.icon} width={25} height={25} alt={`${tool.skill} icon`} />
-                <p className="inline font-medium">{tool.skill}{index !== project.tools.length - 1 && <span className="px-3">|</span>}</p>
+                <p className="inline font-medium align-middle">{tool.skill}{index !== project.tools.length - 1 && <span className="px-3">|</span>}</p>
               </div>
             )
           })}
@@ -39,7 +39,7 @@ export default function Project(props) {
 
         <div className="col-span-2 pb-5">
           {project.skills.map((skill, index) => {
-            return (<p className="inline font-medium">{skill}{index !== project.skills.length - 1 && <span className="px-2">|</span>}</p>)
+            return (<p key={`${project.title}-${skill}`} className="inline font-medium">{skill}{index !== project.skills.length - 1 && <span className="px-2">|</span>}</p>)
           })}
         </div>
 
