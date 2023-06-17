@@ -5,7 +5,7 @@ export default function Skills() {
     skill: 'HTML',
     icon: '/images/html-1.svg'
   }, {
-    skill: 'Vanilla JS',
+    skill: 'JavaScript',
     icon: '/images/Javascript-logo.png'
   }, {
     skill: 'React',
