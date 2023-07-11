@@ -46,7 +46,7 @@ export default function Projects() {
       }
     ],
     skills: ['JSON', 'Data Processing', 'Python Libraries'],
-    description: 'Create dictionaries of common words with definitions, frequencies, and related words. Dictionaries already created for English, German, French, Spanish, Portugese, and Italian.'
+    description: 'Create dictionaries of common words with definitions, frequencies, and related words. Dictionaries already created for English, German, French, Spanish, Portuguese, and Italian.'
   },
   {
     title: 'Reddit Purple',
@@ -69,7 +69,7 @@ export default function Projects() {
       }
     ],
     skills: ['Chrome Extension', 'Regex', 'Reddit API', 'Webpack'],
-    description: 'A Chrome extension to improve the Reddit experience. No more navigating back and forth when the comments are full of links to other Reddit posts!'
+    description: 'Soon to be published in the Chrome Web Store, this extension simplifies certain Reddit posts. No more navigating back and forth when the comments are full of links to other Reddit posts!'
   },
   {
     title: 'Song Snake',
@@ -85,8 +85,8 @@ export default function Projects() {
         icon: '/images/Git-Icon-1788C.png'
       }
     ],
-    skills: ['Spotify API'],
-    description: "Create unique Spotify playlists! Each song added triggers a new search for a single word from the title, artist, or album. Make a game of guessing where a playlist's theme will go!"
+    skills: ['Spotify API', 'OpenAI API'],
+    description: "Create Spotify playlists with a twist! Each song added triggers a new search for a related word. Soon, OpenAI integration will allow you to build playlists related to a theme. Guessing the theme makes a great road trip game!"
   },
 ];
 
