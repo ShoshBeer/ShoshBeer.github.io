@@ -22,7 +22,7 @@ export default function Layout({ children, home, ...customMeta }) {
         <title>{meta.title}</title>
         <meta property="og:site_name" content="Shoshana Beer" />
         <meta property="og:title" content={meta.title} />
-        <meta property="description" content={meta.description} />
+        <meta name="description" property="description" content={meta.description} />
         <meta property="og:image" content={meta.image} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:url" content={meta.url} />

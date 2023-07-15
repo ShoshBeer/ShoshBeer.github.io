@@ -27,10 +27,10 @@ export default function Contact() {
             <Image src={GitLight} width={25} height={25} alt='GitHub icon' className="inline pr-1 align-middle dark:invert" />
             <p className="inline pl-3">Follow me on GitHub!</p>
           </a>
-          <a onClick={() => alert('Just kidding')} className="rounded-sm hover:bg-blue-200 dark:hover:bg-blue-900 border-2 py-2 font-medium text-center cursor-pointer">
+          <div onClick={() => alert('😎 Just kidding!')} className="rounded-sm hover:bg-blue-200 dark:hover:bg-blue-900 border-2 py-2 font-medium text-center cursor-pointer">
             <Image src={HouseLight} width={25} height={25} alt='House icon' className="inline pr-1 align-middle dark:invert" />
             <p className="inline pl-3">Drop by my house!</p>
-          </a>
+          </div>
         </div>
       </div>
     </section>
